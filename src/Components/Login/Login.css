@@ -1,0 +1,118 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    place-content: center;
+}
+
+.login-button {
+    font-size: 3rem;
+    display: grid;
+    place-content: center;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;   
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    padding: 1rem;
+    border-radius: 2rem;
+    background-image: url("https://uiparadox.co.uk/templates/audiobeats/assets/media/bg/main.jpg");
+    border: 10px solid;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+    border: none;
+}
+
+.submit:hover {
+    /* background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
+    color: black;
+    background: white;
+    outline: 1px solid;
+}
+
+.fb {
+    color: #006fff;
+}
+
+.forget_password {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.grid {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+}
+
+.grid h1 {
+    text-align: center;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.grid p {
+    text-align: center;
+}
+
+.grid input:focus {
+    outline: none;
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+}
+
+.text-danger {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* SignIn */
+.signIn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    place-content: center;
+}
+.form_signin {
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+
+}

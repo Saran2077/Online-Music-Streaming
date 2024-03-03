@@ -1,0 +1,305 @@
+.flex{
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    flex-basis: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.artist-image img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.flex::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card */
+.cards {
+    display: flex;
+    flex-basis: 100%;
+    gap: 1rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+
+.card {
+    margin-right: 50px;
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 269px;
+}
+
+.main-play-button {
+    visibility: hidden;
+    display: grid;
+    place-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: var(--font2);
+    position: absolute;
+    left: -10px;
+    background-color: transparent;
+    padding: 0.4rem 0.5rem 0 0.5rem;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+    top:40%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.main-play-button:hover {
+    color: #FF6B00;
+    border: solid 2px #FF6B00;
+}
+
+.card:hover .main-play-button{
+    visibility: visible;
+    display: block;
+    left: 40%;
+    top: 40%;
+}
+
+.play-button {
+    display: none;
+    font-size: 3rem;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: #1d2939;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    color: #1d2939;
+    transform: scale(1.1);
+}
+
+.play-button:active {
+    transform: scale(1);
+}
+
+.card img {
+    width: 269px;
+    height: 350px;
+    object-fit: fill;
+    border-radius: 30px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.title {
+    color: white;
+    font-size: 2rem;
+}
+
+.card-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.main-artist {
+    color: #98a2b3;
+    font-size: 0.7rem;
+}
+
+/* Arrow */
+
+.arrow {
+    font-size: 1.5rem;;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    margin: 3px;
+    right: 0;
+    bottom: 0px;
+    height: 165px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.arrow:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.arrow:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0px;
+}
+
+.main-flex {
+    display: flex;
+    margin: 2rem 1rem;
+    gap: 1.5rem;
+}
+
+.second {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Banner */
+
+.banner-image {
+    width: 50vw;
+    height: auto;
+    border-radius: 1rem;
+    aspect-ratio: 16/9;
+    margin-right: 4rem;
+}
+
+.banner-img {
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    margin-top: 5%;
+}
+
+.banner-heading {
+    color: white;
+    font-size: var(--font1);
+    font-weight: bold;
+}
+
+.artist {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    border-radius: 10px;
+    padding: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.artist-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-artist {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.duration {
+    padding: 0.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+}
+
+.banner-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.banner-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.banner-play {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #FF6B00;
+    border: none;
+    transition: all 0.4s;
+    color: #FAFAFA;
+}
+.banner-playlist {
+    font-size: var(--font2);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #FAFAFA;
+    transition: all 0.4s;
+}
+
+.banner-dot {
+    display: grid;
+    place-content: center;
+    font-size: var(--font2);
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-play:hover {
+    color: black;
+    background-color: #FAFAFA;
+}
+
+.banner-playlist:hover {
+    color: #FAFAFA;
+    background-color: #FF6B00;
+}
+
+.card-details {
+    display: flex;
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+    gap: 1rem;
+}
+
+.banner-features {
+    color: #FAFAFA;
+    font-size: var(--font2);
+    font-weight: 500;
+}
+
+.orange-text {
+    color: #FF6B00
+}
+
+.banner-duration {
+    color: white
+}
+
+@media screen and (max-width: 1153px){
+    :root {
+        --font1: 2rem; 
+    }
+    
+    .banner-img {
+        flex-direction: column;
+    }
+
+    .banner {
+        margin: 1rem;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .main-flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    :root {
+        --font1: 1.5rem;
+    }
+}

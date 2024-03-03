@@ -1,0 +1,116 @@
+/* Music */
+
+.music {
+    display: flex;
+    align-items: center;
+}
+
+.song-details {
+    text-align: center;
+}
+
+.music-image img {
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.song-name {
+    color: white;
+    font-size: var(--font3=2);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.artist-name {
+    color: rgb(175, 172, 172);
+    font-size: var(--font2);
+}
+
+/* MusicPlayer */
+
+.musicPlayer {
+    position: fixed;
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+    padding: 0 10px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Music Controls */
+
+.music-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.play-pause {
+    margin-bottom: 3px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.button-effect:hover {
+    transform: scale(1.1);
+}
+
+.button-effect:active {
+    transform: scale(1);
+}
+
+.button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* ActionBar */
+.actionBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slider {
+    color: white;
+    width: 100%;
+}
+
+/* Slider */
+
+.time {
+    color: white;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.line {
+    width: calc(100vw - 70vw);
+}

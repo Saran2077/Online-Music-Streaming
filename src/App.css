@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+  --font1: 3rem;
+  --font2: 1rem;
+  --font3: 0.5rem;
+}
+
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 4rem;
+  background-image: url("https://uiparadox.co.uk/templates/audiobeats/assets/media/bg/main.jpg");
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+
+.grow {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1300px){
+  body {
+    margin: 0 1rem;
+  }
+}

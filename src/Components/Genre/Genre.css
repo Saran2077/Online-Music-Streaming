@@ -1,0 +1,58 @@
+.Genres {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.Genre {
+    /* width: 370px; */
+    flex-grow: 1;
+    min-width: 23.9%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(27, 28, 30, 0.8) 0%, rgba(27, 28, 30, 0.48) 100%);
+    border-radius: 1.5rem;
+}
+
+.Genre img {
+    border-radius: 1rem;
+    width: 100px;
+}
+
+.Genre-details {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.genre-name {
+    font-size: 1.5rem;
+}
+
+.genre-tracks {
+    color: rgb(192, 192, 192);
+}
+
+.Genres {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-genre {
+    color: white;
+    font-size: var(--font1);
+    font-weight: 600;
+}
+
+.genre-container {
+    margin-top: 2rem;
+}
